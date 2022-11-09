@@ -1,0 +1,8 @@
+SELECT DISTINCT building FROM employees;
+__________________________________________________________________
+SELECT building_name, capacity FROM buildings;
+__________________________________________________________________
+SELECT DISTINCT building_name, role 
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building;
